@@ -1,10 +1,10 @@
 # ejercicios
 
-Descripciín basisca de su Proyecto de POO ...
+Descripcionn basica de su Proyecto de POO ...
 
 # Autores
 
-- Autor 1
+- Autor 1: Hector Daniel Gonzalez
 - Autor 2
 
 # Herramientas
