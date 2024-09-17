@@ -1,5 +1,7 @@
 package co.edu.uniquindio.poo;
 
+import java.time.LocalDateTime;
+
 /**
  * Hello world!
  *
@@ -7,13 +9,19 @@ package co.edu.uniquindio.poo;
 public class App {
     public static void main(String[] args) {
 
-        //Ejemplo de como usar el patrón Builder
-        Cliente mCliente = new Cliente("1038646923", "Daniel", "Gonzalez", "La casa", "6067381406", "31467452720", "danielgonzalezsan4567@outlook.com");
+        //Usando el constructor por default.
+        Reserva miReserva = new Reserva(LocalDateTime.of(2024, 12, 31, 9, 0, 0), (short)0, "Medellín", "Bus", "Visita sitios turisticos", "N/A", TipoAlojamiento.MOTEL);
 
-        Cliente mCliente2 = Cliente.builder().cedula("1038646923").apellido("Gonzalez").nombre("Daniel").build();
+        //Usando el patrón builder.
+        Reserva miReserva2 = Reserva.builder()
+                            .fechaSalida(LocalDateTime.of(2024, 12, 31, 9, 0, 0))
+                            .destino("Medellín")
+                            .tipoAlojamiento(TipoAlojamiento.MOTEL)
+                            .build();
 
-        System.out.println(mCliente);
-        System.out.println(mCliente2);
+        //Impresion de los metodos default y patrón builder.
+        System.out.println(miReserva);
+        System.out.println(miReserva2);
 
     }
 }
