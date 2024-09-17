@@ -1,10 +1,10 @@
-# ejercicios
+# trabajos
 
-Descripcionn basica de su Proyecto de POO ...
+Descripciín basisca de su Proyecto de POO ...
 
 # Autores
 
-- Autor 1: Hector Daniel Gonzalez
+- Autor 1
 - Autor 2
 
 # Herramientas
@@ -37,5 +37,5 @@ Para generar el jar puede usar el comando:
 y para ejecutar el jar
 
 ```shell
- java -jar target/ejercicios-1.0.jar
+ java -jar target/trabajos-1.0.jar
 ```
